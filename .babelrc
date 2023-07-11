@@ -1,0 +1,6 @@
+//permite ir a una version anterior de js (de ecmascript6 a una anterior), esto lo hacemos para que node pueda entender y ejecutar nuestros import y export (para eso instalamos la libreria babel-cli y babel-preset-env)
+
+{
+  "presets": ["env"]
+}
+
