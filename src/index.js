@@ -40,9 +40,11 @@ app.use(cors('')) //permite recibir peticiones remotas
 
 //Primer endpoint o punto para ruta
 //REQUEST (de express): es la consulta.RESPONSE (todo lo que le mando al front como respuesta).
-app.get('/test', (req, res)=>{ 
-  // console.log('Objeto req:', req)
-  console.log('Entro en get test')
-  // res.send('Aqui va la respuesta')
-  res.status(200).json({message:'Aqui iria mi respuesta'})
-})
+// app.get('/test', (req, res)=>{ 
+//   // console.log('Objeto req:', req)
+//   console.log('Entro en get test')
+//   // res.send('Aqui va la respuesta')
+//   res.status(200).json({message:'Aqui iria mi respuesta'})
+// })
+
+app.use("/api", require("./routes/Rutes"))
